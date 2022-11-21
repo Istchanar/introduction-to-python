@@ -30,7 +30,8 @@ def distance2D():
     print('Введите через проблел координаты двух точек, для расчёта расстояния в 2D пространстве: ')
     pointA = list(map(float, input('Координаты точки A: ').split(' ')))
     pointB = list(map(float, input('Координаты точки B: ').split(' ')))
-    print(math.sqrt(round((pointB[0] - pointA[0])**2 + (pointB[1] - pointA[1])**2, 2)))
+    answer = math.sqrt((pointB[0] - pointA[0])**2 + (pointB[1] - pointA[1])**2)
+    print(round(answer, 2))
 
 while(True):
     try:
