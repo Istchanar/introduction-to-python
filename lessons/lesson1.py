@@ -35,7 +35,7 @@ def distance2D():
 
 while(True):
     try:
-        value = input('Урок первый, введите номер задания, для выхода введите exit: ')
+        value = input('Урок #1, введите номер задания (exit для выхода): ')
         match value:
             case '1':
                 dayCheck()
