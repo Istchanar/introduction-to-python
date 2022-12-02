@@ -1,7 +1,7 @@
-# Задание 1.
 import random
 import sys
 
+# Задание 1.
 def sumDigitsInNumber():
     number = int(input('Введите вещественное число (десятичный разделитель - точка), чтобы узнать сумму цифр в нём: ').replace('.', ''))
     def sum(number):
