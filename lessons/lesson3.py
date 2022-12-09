@@ -1,5 +1,4 @@
 import random
-import sys
 
 def createRundomArray(size: int, minValue: int, maxValue: int) -> list:
     numbers = [i for i in range(random.randint(1, size))]
@@ -14,7 +13,7 @@ def sumOddIndexes():
     for i in range(0, len(numbers)):
         if(i%2 != 0):
             oddSum += numbers[i]
-    return oddSum
+    print(oddSum)
 
 # Задание 2.
 def sumOfPairs():
@@ -26,7 +25,7 @@ def sumOfPairs():
     while(i <= j):
         sumOfPairs.append(numbers[i] + numbers[j])
         i, j = i + 1, j - 1
-    return sumOfPairs
+    print(sumOfPairs)
 
 
 # Задание 3.
@@ -37,11 +36,11 @@ def maxNumberAfterPoint():
     print('Сгенерированный массив: ', setNumbers)
     fractionalParts = sorted(list(map(lambda value: round(value % 1, 2), setNumbers)))
     print('Числа после запятой:    ', fractionalParts)
-    return round(fractionalParts[-1] - fractionalParts[0], 2)
+    print(round(fractionalParts[-1] - fractionalParts[0], 2))
 
 # Задание 4
 def numberinBinarryForm():
-    return bin(int(input('Введите число N, для получения числа N в бинарном представлении: '))).replace("0b", "")
+    print(bin(int(input('Введите число N, для получения числа N в бинарном представлении: '))).replace("0b", ""))
 
 
 # Задание 5
@@ -57,25 +56,6 @@ def fibonacciList():
         else:
             return fibonacciNumber(n + 2) - fibonacciNumber(n + 1)
 
-    return [fibonacciNumber(n) for n in range(number * -1 , number + 1)]
+    print([fibonacciNumber(n) for n in range(number * -1 , number + 1)])
 
-while(True):
-    try:
-        value = input('Урок #3, введите номер задания (exit для выхода): ')
-        match value:
-            case '1':
-                sumOddIndexes()
-            case '2':
-                sumOfPairs()
-            case '3':
-                maxNumberAfterPoint()
-            case '4':
-                numberinBinarryForm()
-            case '5':
-                fibonacciList()
-            case 'exit':
-                break
-    except:
-        print('При выполнении программы возника ошибка (неправильные данные и т.д.)')
-
-sys.exit() 
+lessonThree = [sumOddIndexes, sumOfPairs, maxNumberAfterPoint, numberinBinarryForm, fibonacciList]

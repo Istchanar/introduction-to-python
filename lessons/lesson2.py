@@ -1,12 +1,11 @@
 import random
-import sys
 
 # Задание 1.
 def sumDigitsInNumber():
     number = int(input('Введите вещественное число (десятичный разделитель - точка), чтобы узнать сумму цифр в нём: ').replace('.', ''))
     def sum(number):
         return 0 if number == 0 else int(number % 10) + sum(number // 10) 
-    return print(sum(number))
+    print(sum(number))
 
 # Задание 2.
 def listOfFuctorials():
@@ -53,23 +52,4 @@ def arrayShaffle():
         numbers.remove(value)
     print(shaffledNumbers)
 
-while(True):
-    try:
-        value = input('Урок #2, введите номер задания (exit для выхода): ')
-        match value:
-            case '1':
-                sumDigitsInNumber()
-            case '2':
-                listOfFuctorials()
-            case '3':
-                subsequentialSum()
-            case '4':
-                productOfElements()
-            case '5':
-                arrayShaffle()
-            case 'exit':
-                break
-    except:
-        print('При выполнении программы возника ошибка (неправильные данные и т.д.)')
-
-sys.exit() 
+lessonTwo = [sumDigitsInNumber, listOfFuctorials, subsequentialSum, productOfElements, arrayShaffle]

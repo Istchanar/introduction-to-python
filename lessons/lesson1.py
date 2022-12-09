@@ -1,5 +1,4 @@
 import math
-import sys
 
 # Задание 1.
 def dayCheck():
@@ -33,23 +32,4 @@ def distance2D():
     answer = math.sqrt((pointB[0] - pointA[0])**2 + (pointB[1] - pointA[1])**2)
     print(round(answer, 2))
 
-while(True):
-    try:
-        value = input('Урок #1, введите номер задания (exit для выхода): ')
-        match value:
-            case '1':
-                dayCheck()
-            case '2':
-                predicatCheck()
-            case '3':
-                coordinateQuarter()
-            case '4':
-                coordinateRange()
-            case '5':
-                distance2D()
-            case 'exit':
-                break
-    except:
-        print('При выполнении программы возника ошибка (неправильные данные и т.д.)')
-
-sys.exit()
+lessonOne = [dayCheck, predicatCheck, coordinateQuarter, coordinateRange, distance2D]
