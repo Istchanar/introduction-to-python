@@ -8,7 +8,7 @@ def fixedPointPi():
 
 # Задание 2.
 def numberFactorization():
-    number = input('Введите число для получения массива простых множителей числа: ')
+    number = int(input('Введите число для получения массива простых множителей числа: '))
     primeNumbers = set()
     divisor = 2
     while divisor * divisor <= number:
@@ -28,7 +28,7 @@ def uniqueValues():
 
 # Задание 4.
 def polynomialInFile():
-    filePath = 'data/polynomialString.txt'
+    filePath = 'data/lesson4/polynomialString.txt'
     power = int(input('Введите степень для генерации и записи в файл data/polynomialString.txt многочлена (с коэффициенами от 1 до 100): '))
     polynomial = ""
     while(power >= 0):
@@ -48,8 +48,8 @@ def polynomialInFile():
 
 # Задание 5.
 def polynomialSumFromFile():
-    print('Результат суммирования двух многочленов из файлов data/polynomial1.txt, data/polynomial2.txt: ')
-    filePathFirst, filePathSecond, polynomialSum = 'data/polynomial1.txt', 'data/polynomial2.txt', 'data/polynomialSum.txt'
+    print('Результат суммирования двух многочленов из файловdata/lesson4/polynomial1.txt, data/lesson4/polynomial2.txt: ')
+    filePathFirst, filePathSecond, polynomialSum = 'data/lesson4/polynomial1.txt', 'data/lesson4/polynomial2.txt', 'data/lesson4/polynomialSum.txt'
     with open(filePathFirst, 'r') as polynomial1:
         stringOne = polynomial1.read().split('=')[0]
     with open(filePathSecond, 'r') as polynomial1:
