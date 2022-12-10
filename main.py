@@ -3,9 +3,10 @@ from lessons.lesson1 import lessonOne
 from lessons.lesson2 import lessonTwo
 from lessons.lesson3 import lessonThree
 from lessons.lesson4 import lessonFour
+from lessons.lesson5 import lessonFive
 
 def main():
-    lessons = [lessonOne, lessonTwo, lessonThree, lessonFour]
+    lessons = [lessonOne, lessonTwo, lessonThree, lessonFour, lessonFive]
     while(True):
         try:
             lessonNumber = input('\033[32m' + 'Введите номер урока (exit для выхода): ' + '\033[0m')
