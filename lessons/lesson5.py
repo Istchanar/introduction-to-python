@@ -14,7 +14,7 @@ def removeSubstring():
 
 # Задание 2.
 def candyGame():
-    candys = 70
+    candys = 2021
     print('Игра 2021 конфета, кто делает последний ход - заберает всё!')
     player = random.randint(1, 2)
     print(f'Первый ход Игрока #1, если выпало 1, или Игрока #2, если выпало 2. Выпало:', player)
