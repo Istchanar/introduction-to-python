@@ -48,7 +48,7 @@ def polynomialInFile():
 
 # Задание 5.
 def polynomialSumFromFile():
-    print('Результат суммирования двух многочленов из файловdata/lesson4/polynomial1.txt, data/lesson4/polynomial2.txt: ')
+    print('Результат суммирования двух многочленов из файлов data/lesson4/polynomial1.txt, data/lesson4/polynomial2.txt: ')
     filePathFirst, filePathSecond, polynomialSum = 'data/lesson4/polynomial1.txt', 'data/lesson4/polynomial2.txt', 'data/lesson4/polynomialSum.txt'
     with open(filePathFirst, 'r') as polynomial1:
         stringOne = polynomial1.read().split('=')[0]
