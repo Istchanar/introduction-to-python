@@ -1,3 +1,7 @@
-12.18.2022 14:17:55 asdads
-12.18.2022 14:18:02 asdads
-12.18.2022 14:18:03 asdads
+12.18.2022 22:11:59 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:46 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:46 Generated TXT file, directory: lessons/lesson7/exports/data_TXT.txt;
+12.18.2022 22:13:59 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:59 Generated PDF file, directory: lessons/lesson7/exports/data_PDF.pdf;
+12.18.2022 22:14:06 Data received successfully, getPhonesData() call;
+12.18.2022 22:14:06 Generated HTML file, directory: lessons/lesson7/exports/data_HTML.html;
