@@ -18,7 +18,7 @@ def getPhoneData(findString: str, contacts: list) -> list:
 
 def setPhoneInData(newData: list):
     with open(config.dataPath, 'a+', newline='') as csvData:
-        csv.writer(csvData, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL).writerow(data)
+        csv.writer(csvData, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL).writerow(newData)
     utils.logger(f'Add data into a database, addPhonesData() call, query data: {newData}')
 
 
@@ -39,4 +39,4 @@ def deletePhoneInData(findString: str):
 
 def printPhonesData(data: list):
     if (len(data) == 0): return print('Data empty/not exist.')
-    list(map(lambda row: print(' '.join(text.ljust(17) for text in row)), data))
+    map(lambda row: print(' '.join(text.ljust(17) for text in row)), data)
