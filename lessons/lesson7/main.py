@@ -1,55 +1,16 @@
-import sys
-import app.utils as utils
-import app.config as config
-import app.data_actions as action
-import app.export_actions as export
+import ui_actions as ui
 
+new_app = ui.window_configurate(ui.app, 'Telephone directory', 245, 400)
 
-def main():
-    print('\u001b[35m' + '\nTelephone directory.\n')
-    utils.printHelp()
-    while (True):
-        try:
-            actionChoise = input('\033[32m' + 'Select the actions: ' + '\033[0m')
-            if (actionChoise == 'exit'): break
-            actions(int(actionChoise))
-        except:
-            print('Unexpected error (reading a file, entering data, etc)')
-    sys.exit()
+def new_app_start():
+    ui.component_button(new_app, ui.get_all_contacts_dialog, '1. Get all contacts', 25, 2, '#c489c3', 1, 0)
+    ui.component_button(new_app, ui.get_contact_dialog, '2. Find contacts', 25, 2, '#c489c3', 1, 1)
+    ui.component_button(new_app, ui.set_contact_dialog, '3. Add contact in database', 25, 2, '#c489c3', 2, 0)
+    ui.component_button(new_app, ui.delete_contact_dialog, '4. Delete contact from database', 25, 2, '#c489c3', 2, 1)
+    ui.component_button(new_app, ui.export_contacts_dialog, '5. Export contacts in file', 25, 2, '#c489c3', 3, 0)
+    ui.component_button(new_app, ui.help_dialog, '6. Help information', 25, 2, '#c489c3', 3, 1)
+    ui.component_button(new_app, ui.remove_logs_dialog, '7. Remove logs file', 25, 2, '#c489c3', 4, 0)
+    ui.component_button(new_app, ui.remove_all_data_dialog, '8. Remove all contacts', 25, 2, '#c489c3', 4, 1)
+    new_app.mainloop()
 
-
-def actions(actionNumber: int):
-    match actionNumber:
-        case 1:
-            print('\nContacts: ')
-            action.printPhonesData(action.getPhonesDataAll())
-        case 2:
-            findContact = input('\nEnter data to search for contacts: ')
-            action.printPhonesData(action.getPhoneData(
-                findContact, action.getPhonesDataAll()))
-        case 3:
-            newContact = input(
-                '\nEnter data to add a new contact (delimiter ","): ').split(",")
-            action.setPhoneInData(newContact)
-        case 4:
-            deleteContact = input('\nEnter data to delete a contact: ')
-            action.deletePhoneInData(deleteContact)
-        case 5:
-            fileType = input(
-                '\nEnter file type (TXT, PDF, HTML) for create export file: ')
-            export.switchExportType(fileType, action.getPhonesDataAll())
-        case 6:
-            utils.printHelp()
-        case 7:
-            print('\nLogs deleted.')
-            utils.deleteFile(config.logPath)
-        case 8:
-            choise = input('\nAre you sure (type "yes" to delete)?: ')
-            if (choise == 'yes'):
-                action.deletePhonesDataAll()
-        case _:
-            print('Unexpected command.')
-    print('')
-
-
-main()
+new_app_start()
