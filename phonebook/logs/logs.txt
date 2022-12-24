@@ -1,0 +1,17 @@
+12.18.2022 22:11:59 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:46 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:46 Generated TXT file, directory: lessons/lesson7/exports/data_TXT.txt;
+12.18.2022 22:13:59 Data received successfully, getPhonesData() call;
+12.18.2022 22:13:59 Generated PDF file, directory: lessons/lesson7/exports/data_PDF.pdf;
+12.18.2022 22:14:06 Data received successfully, getPhonesData() call;
+12.18.2022 22:14:06 Generated HTML file, directory: lessons/lesson7/exports/data_HTML.html;
+12.24.2022 22:10:00 Data received successfully, get_all_contacts() call;
+12.24.2022 22:10:06 Data received successfully, get_all_contacts() call;
+12.24.2022 22:10:33 Data received successfully, get_all_contacts() call;
+12.24.2022 22:14:42 Data received successfully, get_all_contacts() call;
+12.24.2022 22:22:16 Data received successfully, get_all_contacts() call;
+12.24.2022 22:23:06 Data received successfully, get_all_contacts() call;
+12.24.2022 22:25:07 Data received successfully, get_all_contacts() call;
+12.24.2022 22:25:28 Data received successfully, get_all_contacts() call;
+12.24.2022 22:25:52 Data received successfully, get_all_contacts() call;
+12.24.2022 22:26:20 Data received successfully, get_all_contacts() call;

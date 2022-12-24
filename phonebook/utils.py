@@ -2,12 +2,12 @@ import os
 import datetime
 
 # Export text files path
-exports_path = 'lessons/lesson7/exports/'
-data_base_path = 'lessons/lesson7/data_base/data_base.csv'
-logs_path = 'lessons/lesson7/logs/logs.txt'
+exports_path = 'phonebook/exports/'
+data_base_path = 'phonebook/data_base/data_base.csv'
+logs_path = 'phonebook/logs/logs.txt'
 
 # Pics path
-icon_path = './lessons/lesson7/images/magenta_icon.png'
+icon_path = './phonebook/images/magenta_icon.png'
 
 # Data headers
 headers = ['Name', 'Surname', 'Address', 'Phone number']
