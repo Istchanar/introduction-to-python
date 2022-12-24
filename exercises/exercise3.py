@@ -3,7 +3,7 @@ import random
 
 def create_rundom_array(size: int, min: int, max: int) -> list:
     numbers = [i for i in range(random.randint(1, size))]
-    return list(map(lambda: random.randint(min, max), numbers))
+    return list(map(lambda _: random.randint(min, max), numbers))
 
 
 def sum_odd_indexes():
@@ -32,7 +32,7 @@ def sum_of_pairs():
 def fractional_part_difference():
     print('Array of real numbers created programmatically, return the difference of two numbers fractional part (min, max): ')
     numbers = [i for i in range(random.randint(1, 10))]
-    generate_numbers = list(map(lambda: round(random.random()*10, 2), numbers))
+    generate_numbers = list(map(lambda _: round(random.random()*10, 2), numbers))
     print('Generated array: ', generate_numbers)
     fractional_part = sorted(list(map(lambda value: round(value % 1, 2), generate_numbers)))
     print('Fractional parts:    ', fractional_part)

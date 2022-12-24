@@ -4,8 +4,8 @@ import math
 def day_check():
     week = {'0': 'Yes', '1': 'No', '2': 'No', '3': 'No', '4': 'No', '5': 'No', '6': 'Yes'}
     num = input('Input day number of a week, and check if day a weekend: ')
-    print('The number of the day does not exist.' if not (num in week) else dict.get(num))
-
+    print('The number of the day does not exist.' if not (num in week) else week.get(num))
+    
 
 def predicates_print():
     print('Print all predicates: not X or Y or Z = not X and not Y and not Z: ')

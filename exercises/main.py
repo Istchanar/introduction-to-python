@@ -12,7 +12,7 @@ def main():
     exit_command = 'exit'
     while(True):
         try:
-            group_number = input(colors['Green'] + f'Select group of exercise (type "{exit_command}" for close): ' + colors['Reset'])
+            group_number = input(colors['Green'] + f'Select group of exercises (type "{exit_command}" for close): ' + colors['Reset'])
             if (group_number == exit_command): break
             exercise_number = input(colors['Purple'] + f'Group {group_number}, type number of exercise (type "{exit_command}" for close): ' + colors['Reset'])
             if (exercise_number == exit_command): break

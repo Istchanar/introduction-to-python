@@ -3,10 +3,10 @@ import random
 
 
 def sum_of_the_digits():
-    numbers = int(input('Input real number(decimal separator - dot), for output sum if the digits: ').replace('.', ''))
+    numbers = input('Input real number(decimal separator - dot), for output sum if the digits: ').replace('.', '')
     sum_numbers = functools.reduce(lambda x, y: x + y, [int(number) for number in numbers]) 
     print(sum_numbers)
-
+    
 
 def list_of_fuctorials():
     number = int(input('Enter a number N, for generate array of factorials from 0 to N: '))

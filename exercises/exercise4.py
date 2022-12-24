@@ -51,8 +51,7 @@ def polynomial_in_file():
 
 def polynomials_sum_from_files():
     path_prefix = 'exercises/text_data/'
-    print(
-        f'Result of sum to polynomials from {path_prefix}polynomial_first.txt, {path_prefix}polynomial_second.txt: ')
+    print(f'Result of sum to polynomials from {path_prefix}polynomial_first.txt, {path_prefix}polynomial_second.txt: ')
 
     path_first = f'{path_prefix}polynomial_first.txt'
     with open(path_first, 'r') as polynomial_first:
@@ -64,8 +63,8 @@ def polynomials_sum_from_files():
 
     path_result = f'{path_prefix}polynomial_sum.txt'
     with open(path_result, 'w') as polynomial_sum:
-        polynomial_sum.writelines(
-            f'{str(sympy.powsimp(string_one + "+" + string_two))} = 0')
+        polynomial_sum.writelines(f'{str(sympy.powsimp(string_one + "+" + string_two))} = 0')
+    print(f'{str(sympy.powsimp(string_one + "+" + string_two))} = 0')
 
 
 exercise_4 = [fixed_point_pi, number_factorization, unique_values, polynomial_in_file, polynomials_sum_from_files]

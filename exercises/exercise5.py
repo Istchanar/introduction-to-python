@@ -31,7 +31,8 @@ def candy_game():
 def tic_tac_toe():
     def print_board(board: list):
         for row in board:
-            map(lambda cell: print(cell, end=' '), row)
+            for cell in row:
+                print(cell, end=' ')
             print()
 
     def check_winner(player: str, board: list) -> bool:
