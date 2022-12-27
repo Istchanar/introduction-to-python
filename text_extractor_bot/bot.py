@@ -85,7 +85,8 @@ async def save_data(message: Message, state: FSMContext) -> None:
 
 @dp.message_handler(Command('cancel', ignore_case = True))
 async def close_command(message: Message, state: FSMContext) -> None:
-    if  state.get_state is None: return
+    c_state = await state.get_state
+    if c_state is None: return
     await state.finish()
     await message.answer('Goodbye! 🛸', reply_markup = ReplyKeyboardRemove())
 
